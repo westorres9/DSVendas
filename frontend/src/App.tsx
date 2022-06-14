@@ -1,10 +1,17 @@
 import React from 'react';
 import 'assets/styles/custom.css';
 import './App.css';
+import Navbar from 'components/Navbar';
+import Footer from 'components/Footer';
 
 function App() {
   return (
-    <h1 className="text-primary">DSVendas</h1>
+  <>
+    <Navbar/>
+    <h1>DSVendas</h1>
+    <Footer/>
+  </>
+    
   );
 }
 
