@@ -1,11 +1,22 @@
 package com.devsuperior.dsvendas.entities;
 
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+@Entity
+@Table(name = "tb_seller")
+public class Seller implements Serializable {
+private static final long serialVersionUID = 1L;
 
-public class Seller {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
+
+    @OneToMany(mappedBy = "seller")
+    private List<Sale> sales = new ArrayList<>();
 
     public Seller() {
     }
@@ -29,6 +40,10 @@ public class Seller {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<Sale> getSales() {
+        return sales;
     }
 
     @Override

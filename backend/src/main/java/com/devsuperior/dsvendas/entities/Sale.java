@@ -1,15 +1,25 @@
 package com.devsuperior.dsvendas.entities;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
+@Entity
+@Table(name = "tb_sales")
+public class Sale implements Serializable {
+    private static final long serialVersionUID = 1L;
 
-public class Sale {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Integer visited;
     private Integer deals;
     private Double amount;
     private LocalDate date;
+
+    @ManyToOne
+    @JoinColumn(name = "seller_id")
+    private Seller seller;
 
     public Sale () {
     }
@@ -60,6 +70,14 @@ public class Sale {
 
     public void setDate(LocalDate date) {
         this.date = date;
+    }
+
+    public Seller getSeller() {
+        return seller;
+    }
+
+    public void setSeller(Seller seller) {
+        this.seller = seller;
     }
 
     @Override
