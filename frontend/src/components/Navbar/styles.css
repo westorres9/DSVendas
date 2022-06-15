@@ -1,3 +1,18 @@
-.main-nav svg {
-    width: 160px;
+.main-nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+.container svg {
+    width: 150px;
+    padding-bottom: 80px;;
+}
+
+@media (min-width: 768px) {
+    .container svg {
+
+        padding-bottom: 0px
+    }
 }

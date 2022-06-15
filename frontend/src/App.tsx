@@ -1,17 +1,19 @@
 import React from 'react';
-import 'assets/styles/custom.css';
-import './App.css';
-import Navbar from 'components/Navbar';
-import Footer from 'components/Footer';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import DataTable from "./components/DataTable";
 
 function App() {
   return (
-  <>
-    <Navbar/>
-    <h1>DSVendas</h1>
-    <Footer/>
-  </>
-    
+      <>
+          <Navbar/>
+            <div className="container text-primary">
+                <h1>DSVendas</h1>
+                <DataTable/>
+            </div>
+          <Footer/>
+      </>
+
   );
 }
 
