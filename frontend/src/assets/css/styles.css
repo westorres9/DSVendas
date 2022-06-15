@@ -4,15 +4,11 @@
     --color-secondary: #4080f8;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-weight: bold;
-}
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-
 #root {
     display: flex;
     flex-direction: column;

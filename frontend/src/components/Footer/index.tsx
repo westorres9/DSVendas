@@ -5,7 +5,7 @@ import './styles.css';
 
 const Footer = () => {
     return (
-        <footer className="main-footer fixed-bottom">
+        <footer className="main-footer">
             App desenvolvido por Wester Torres usando Java e Spring no backend e React no Frontend
             <div className="footer-icons">
                 <a href="www.github.com/westorres9" target="_new">
