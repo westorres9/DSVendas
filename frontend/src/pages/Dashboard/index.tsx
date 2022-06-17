@@ -1,14 +1,13 @@
-import BarChart from "components/BarChart";
-import DataTable from "components/DataTable";
-import DonutChart from "components/DonutChart";
-import Footer from "components/Footer";
-import Navbar from "components/Navbar";
-
+import BarChart from 'assets/components/BarChart';
+import DataTable from 'assets/components/DataTable';
+import DonutChart from 'assets/components/DonutChart';
+import Footer from 'assets/components/Footer';
+import NavBar from 'assets/components/NavBar/indext';
 
 const Dashboard = () => {
   return (
     <>
-      <Navbar />
+      <NavBar />
       <div className="container">
         <h2 className="text-primary py-4">Dashboard de Vendas</h2>
 
@@ -30,7 +29,7 @@ const Dashboard = () => {
         <DataTable />
       </div>
       <Footer />
-      </>
+    </>
   );
 };
 

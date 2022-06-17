@@ -7,14 +7,14 @@
     line-height: 16px;
     text-align: center;
     color: #FFF;
-}
-
-.footer-icons {
+  }
+  
+  .footer-icons {
     margin-top: 10px;
     display: flex;
     justify-content: center;
-}
-
-.footer-icons > * {
+  }
+  
+  .footer-icons > * {
     margin-right: 5px;
-}
+  }

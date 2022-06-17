@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 :root {
-    --color-primary: #FF8400;
-    --color-secondary: #4080f8;
+    /* --color-primary: #FF8400; */
+    --color-primary: #4080f8;
 }
-
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
+
 #root {
     display: flex;
     flex-direction: column;
